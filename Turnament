@@ -1,0 +1,43 @@
+Act as an expert Full-Stack Developer. I want complete, working code and database logic for a Free Fire Tournament App with an Admin Panel. 
+Requirements:
+1. User Registration: Every user gets a unique ID code.
+2. Match Types (LW, BR, CS): Admin can dynamically create matches and change entry fees/prizes (e.g., LW entry ₹20 win ₹30; BR entry ₹15 per kill ₹10; CS entry ₹25 winning 4 players get ₹40 each).
+3. Wallet & QR Deposit: Display admin's QR code. User enters paid amount and submits request. Admin manually reviews and adds money to user's wallet.
+4. Withdrawal System: User requests withdrawal with UPI ID and amount (cannot exceed wallet balance). Admin manually pays and approves.
+5. Admin Panel: Admin controls match pricing, verifies manual deposits/withdrawals, and inputs Custom Room ID & Password manually before matches start.
+Please write the complete step-by-step code and implementation logic.
+Act as an expert Full-Stack Mobile & Web Developer. I want to build a complete Free Fire Tournament App consisting of an Android User App (or Cross-Platform App) and a Web-Based Admin Panel. 
+
+Please design and write the core architecture and logic for this system based on the following detailed requirements:
+
+1. User Authentication & Profile:
+- Users can register and log in.
+- Every user must have a unique User ID code generated automatically.
+
+2. Tournament Modes & Match Management (Controlled via Admin Panel):
+- The app must support 3 distinct match types: LW (Lone Wolf), BR (Battle Royale), and CS (Clash Squad).
+- Admin must be able to dynamically create, edit, increase, or decrease entry fees and prize pools for any match from the admin panel.
+- Example structure provided:
+  * LW: Entry fee ₹20, Winner prize ₹30.
+  * BR Rank: Entry fee ₹15, Per kill reward ₹10.
+  * CS: Entry fee ₹25, Winning team players (4 players) get ₹40 each.
+- Custom Room Credentials (Room ID and Password) must be manually added by the admin in the panel, which will then become visible to registered users inside the match room page before the match starts.
+
+3. Wallet & Manual Deposit System:
+- The app must have a "Add Money" section where a QR Code uploaded by the admin is displayed.
+- The user enters the amount they paid and submits a deposit request along with their payment reference/details.
+- The request goes to the Admin Panel. The admin checks the payment manually and approves/enters the amount manually into the user's wallet so they can join matches.
+
+4. Manual Withdrawal System:
+- Users can request a withdrawal from their wallet balance.
+- Users cannot request an amount greater than their current wallet balance.
+- Users provide their UPI ID and the withdrawal amount.
+- The request goes to the Admin Panel, where the admin reviews it and marks it as paid after transferring money manually via UPI.
+
+5. Admin Panel Capabilities:
+- Control match creation, pricing, and timing.
+- Manual verification of wallet deposits and approvals of user wallet balances.
+- Manual processing of withdrawal requests.
+- Manual input of Custom Room ID and Password for matches.
+
+Please provide the technical architecture, database schema (e.g., users, matches, wallet_transactions, withdrawals), and foundational code/logic implementation steps for both the backend/admin panel and the user app frontend.
